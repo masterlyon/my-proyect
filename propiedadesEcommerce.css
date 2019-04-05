@@ -1,0 +1,27 @@
+body{
+  background-image: url(fotos/Guitarra2.jpg);
+  background-size: 100% 100%;
+  background-attachment:fixed;
+}
+
+h1{
+  color: #F39C12;
+  font-family:Lucida Handwriting;
+  font-size: 45px;
+}
+h3{
+  color:#F2F3F4 ;
+  font-family:Lucida Handwriting;
+  font-size: 25px;
+}
+
+p{
+  color: #C0C0C0;
+  font-family:arial;
+}
+
+a{
+  color: #85C1E9;
+  font-family:Lucida Handwriting;
+  font-size: 20px;
+}

@@ -1,0 +1,29 @@
+body{
+  background: linear-gradient(#fff 25%, #00ff00)
+}
+.transformaciones:hover{
+  transform:scale(2,1);
+}
+
+@keyframes mi_primera_animacion{
+50%{
+transform: rotate(45deg);
+}
+100%{
+transform: translate(200px);
+}
+}
+.Animacion{
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
+
+.Animacion{
+  animation-name: ;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 2%;
+  animation-delay: 0%;
+  animation-direction: alternate;
+  }

@@ -1,0 +1,19 @@
+p{
+  font-family: sans-serif;
+  font-size: 1.1em;
+  color:red;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  line-height: 1em;
+  text-align: right;
+  text-decoration: underline; /*subrayar un texto*/
+  text-transform: capitalize;
+}
+Body{
+  background-image: url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+}
+
+div{
+  border-style: double;
+
+}

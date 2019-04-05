@@ -1,0 +1,63 @@
+body{
+  background-image: url("star-wars_1024.jpg");
+  background-size: contain;
+}
+.contenido{
+  width: 90%;
+  margin:auto;
+  height: 90%;
+  background-color: white;
+  text-align: center;
+}
+header{
+  color:white;
+  text-align: right;
+  font-size: 1.7em;
+}
+#color_titulos{
+  color:red;
+}
+section{
+  padding:20px;
+  text-align: center;
+}
+article{
+  width: 29%;
+  margin: auto;
+  float:left;
+  padding:10px;
+  background-color: white;
+}
+article h2{
+  color:white;
+}
+article p{
+  height: 200px;
+  overflow: auto;
+}
+.Personajes h2{
+  background-color:red;
+}
+
+.Personajes{
+  border-right-style: dotted;
+  border-color: red;
+}
+
+.Casting h2{
+  background-color:blue;
+}
+.Casting{
+  border-right-style: dotted;
+  border-color: blue;
+}
+.Rodaje h2{
+  background-color:green;
+}
+
+header{
+  width:90%;
+  height: 40px;
+  background-image: url("sw_banner.jpeg");
+  background-size: contain;
+}
