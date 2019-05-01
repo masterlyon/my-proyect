@@ -1,73 +1,439 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-      <meta charset="utf-8">
-      <title>Los Hermanos Araya</title>
-      <link rel="stylesheet" href="css/estilos.css"/> <!-- agrega estilos con CSS-->
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     
-    <body background="img/Guitarra2.jpg"/>
-    
-      <div id="principal">
-        <header>
-            <div id="logo">
-              <h2> Los Hermanos Araya</h2> <!--tamaño del titulo son 6 el mas pequeño-->
-              <h3>Lo que se viene</h3>  <!--parrafo-->
-            </div> <!--define seccion de un documento-->
-
-            <nav class="menu">
-              <ul> <!--lista desordenada-->
-                <li><a href="eventos.html">EVENTOS</a></li>  <!--"li"=definir itens de una lista y "a"=hipervinculo-->
-                <li><a href="noticias.html">NOTICIAS</a></li>
-                <li><a href="Contacto.html">CONTACTOS</a></li>
-                <li><a href="">VENTAS</a></li>
+    <link rel="stylesheet" href="index.css">
+    <title>Los Hermanos Araya</title>
+  </head>
+  	<body>
+      <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container-fluid">
+       <!-- Marca y conmutador se agrupan para una mejor visualización móvil-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Tabla de Navegacion</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bienvenidos</a>
+        </div>
+       <!-- Recopile los enlaces de navegación, formularios y otro contenido para alternar -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Productos <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">CD</a></li>
+                <li><a href="#">DVD</a></li>
+                <li><a href="#">CASSETE</a></li>
+                <li><a href="#">EVENTOS</a></li>
               </ul>
-            </nav>
-           </header>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Ingrese Producto...">
+            </div>
+            <button type="submit" class="btn btn-default">Buscar</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NOVEDADES-CONSULTAS<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="noticias.html">NOTICIAS</a></li>
+                <li><a href="video/videoplayback.mp4">HISTORIA</a></li>
+                <li><a href="#" role="modal" data-toggle="modal" data-target="#galeria1">GALERIA</a></li>  <!--modal galeria de imagenes-->
+                <li><a href="#">CARRO DE COMPRAS</a></li>
+                <li><a href="contacto.html">CONTACTENOS</a></li>
+                                
+             </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+  	 <div class="container">
+      <section class="jumbotron">
+        <h1><small>Lo mejor de</small> "Los Hermanos Araya"</h1>
+        <h4>Búscalos antes que se agoten...</h4>
+      </section>
+     
+           <!-- agregar carousel Js-->
+           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+             <!-- Indicadores-->
+             <ol class="carousel-indicators">
+               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+             </ol>
+           
+             <!-- diapositivas -->
+             <div class="carousel-inner" role="listbox">
+               <div class="item active">
+                 <img src="img/slide-2.jpg" alt="...">
+                 <div class="carousel-caption">
+                 <h4>Ya están de regreso y ahora son tres</h4>
+				 <p>Después de varios años desaparecidos de las pistas y de los escenarios más importantes del país, vuelven renovados y con todo su sabor los tremendos "Hermanos Araya" y ahora con un nuevo integrante en la familia, "Rodrigo Araya" (El Pulpo de Bodega)...</p>
+                  </div>
+               </div>
+               <div class="item">
+                 <img src="img/acordeon_slide.jpg" alt="...">
+                 <div class="carousel-caption">
+                 <h4>Ya están de regreso y ahora son tres</h4>
+				 <p>Después de varios años desaparecidos de las pistas y de los escenarios más importantes del país, vuelven renovados y con todo su sabor los tremendos "Hermanos Araya" y ahora con un nuevo integrante en la familia, "Rodrigo Araya" (El Pulpo de Bodega)...</p>
+                 </div>
+               </div>
+                  <div class="item">
+                 <img src="img/slide-5.jpg" alt="...">
+                 <div class="carousel-caption">
+                 <h4>Ya están de regreso y ahora son tres</h4>
+				 <p>Después de varios años desaparecidos de las pistas y de los escenarios más importantes del país, vuelven renovados y con todo su sabor los tremendos "Hermanos Araya" y ahora con un nuevo integrante en la familia>, "Rodrigo Araya" (El Pulpo de Bodega)...</p>
+                  </div>
+               </div>
+             </div>
+             <!-- Controles-->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>  <!-- fin carousel Js-->
 
-        <section id="slide">
-          <img src="img/acordeon.jpg" width="900" height="250">
+        <section class="menu-vertical col-md-2">
+          <h4>Disponibles</h4>
+          <div class="list-group">
+            <a href="#" class="list-group-item">CD <span class="badge">150</span></a>
+            <a href="#" class="list-group-item">DVD <span class="badge">30</span></a>
+            <a href="#" class="list-group-item">CASSETE <span class="badge">2</span></a>
+            <a href="Contacto.html" class="list-group-item">CONTRATOS <span class="badge">ver</span></a>
         </section>
+        <section class="detalle-categorias col-md-10">
+          <article class="col-md-12">
+            <h4>CD</h4>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="img/2-vol.jpg" alt="...">
+                <div class="caption">
+                  <h5>El nuevo estilo tropical </h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tempore, dolores rem, labore deleniti alias debitis doloribus dignissimos asperiores doloremque fugiat ut sunt optio eaque inventore omnis, odit, molestiae iusto!</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Agregar al Carro</a> <a href="#" class="btn btn-default" role="modal" data-toggle="modal" data-target="#produc9">Ver detalles</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="img/imagen10.jpg" alt="...">
+                <div class="caption">
+                  <h5>Los chicos de la cumbia</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tempore, dolores rem, labore deleniti alias debitis doloribus dignissimos asperiores doloremque fugiat ut sunt optio eaque inventore omnis, odit, molestiae iusto!</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Agregar al Carro</a> <a href="#" class="btn btn-default" role="modal" data-toggle="modal" data-target="#produc8">Ver detalles</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="img/imagen7-1.jpg" alt="..."> <!--ver la configuracion de las imagenes https://via.placeholder.com/150 -->
+                <div class="caption">
+                  <h5>Lo último de los H. Araya</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tempore, dolores rem, labore deleniti alias debitis doloribus dignissimos asperiores doloremque fugiat ut sunt optio eaque inventore omnis, odit, molestiae iusto!</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Agregar al Carro</a> <a href="#" class="btn btn-default" role="modal" data-toggle="modal" data-target="#produc7">Ver detalles</a></p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-12">
+            <h4>DVD</h4>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="img/2-vol.jpg" alt="...">
+                <div class="caption">
+                  <h5>El nuevo estilo tropical</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tempore, dolores rem, labore deleniti alias debitis doloribus dignissimos asperiores doloremque fugiat ut sunt optio eaque inventore omnis, odit, molestiae iusto!</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Agregar al Carro</a> <a href="#" class="btn btn-default" role="modal" data-toggle="modal" data-target="#produc6">Ver detalles</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="img/imagen10.jpg" alt="...">
+                <div class="caption">
+                  <h5>Los chicos de la cumbia</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tempore, dolores rem, labore deleniti alias debitis doloribus dignissimos asperiores doloremque fugiat ut sunt optio eaque inventore omnis, odit, molestiae iusto!</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Agregar al Carro</a> <a href="#" class="btn btn-default" role="modal" data-toggle="modal" data-target="#produc5">Ver detalles</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="img/imagen7-1.jpg" alt="...">
+                <div class="caption">
+                  <h5>Lo último de los H. Araya</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tempore, dolores rem, labore deleniti alias debitis doloribus dignissimos asperiores doloremque fugiat ut sunt optio eaque inventore omnis, odit, molestiae iusto!</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Agregar al Carro</a> <a href="#" class="btn btn-default" role="modal" data-toggle="modal" data-target="#produc4">Ver detalles</a></p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-12">
+            <h4>Cassete</h4>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="img/2-vol.jpg" alt="...">
+                <div class="caption">
+                  <h5>El nuevo estilo tropical</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tempore, dolores rem, labore deleniti alias debitis doloribus dignissimos asperiores doloremque fugiat ut sunt optio eaque inventore omnis, odit, molestiae iusto!</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Agregar al Carro</a> <a href="#" class="btn btn-default" role="modal" data-toggle="modal" data-target="#produc3">Ver detalles</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="img/imagen10.jpg" alt="...">
+                <div class="caption">
+                  <h5>Los chicos de la cumbia</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tempore, dolores rem, labore deleniti alias debitis doloribus dignissimos asperiores doloremque fugiat ut sunt optio eaque inventore omnis, odit, molestiae iusto!</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Agregar al Carro</a> <a href="#" class="btn btn-default" role="modal" data-toggle="modal" data-target="#produc2">Ver detalles</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="img/imagen7-1.jpg" alt="...">
+                <div class="caption">
+                  <h5>Lo último de los H. Araya</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tempore, dolores rem, labore deleniti alias debitis doloribus dignissimos asperiores doloremque fugiat ut sunt optio eaque inventore omnis, odit, molestiae iusto!</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Agregar al Carro</a> <a href="#" class="btn btn-default" role="modal" data-toggle="modal" data-target="#produc1">Ver detalles</a></p>
+                </div>
+              </div>
+              	<div class="icons">
+              	<h6>Busquedas Relacionas</h6>
+        		<a href="http://www.faceboock.com"><img src="img/facebook_32.png" alt="" /></a>&nbsp;<a href="http://www.twitter.com"><img src="img/twitter_32.png" alt="" /></a>&nbsp;<a href="http://www.instagram.com"><img src="img/instagram.png" alt="" /></a>
+        		</div>
+        		<br>
+        		<br>
+	         </div>
+	        </article>
+	       </section>
+	      </div>
+	      
+	                  <!-- Modal 1 cassete-->
+                     <div class="modal fade" id="produc1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header"style="text-align: center">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h4 class="modal-title" id="myModalLabel">Lo último de los Hermanos Araya</h4>
+                           </div>
+                           <div class="modal-body"><p>Por estos días están trabajando en su último álbum, aún con un nombre incognito y desconocido. Los H.A son actualmente el único grupo del sector con más trayectoria en este género de musical, quieres escuchar su uno de sus últimos trabajos, pincha el botón...</p>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                             <a class="btn btn-primary"<a href="audio/Cajita Vallenata v4.mp3" class="btn btn-primary" role="button">Escuchar</a>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     
+                      <!-- Modal 2-->
+                     <div class="modal fade" id="produc2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header"style="text-align: center">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h4 class="modal-title" id="myModalLabel">Los chicos de la cumbia</h4>
+                           </div>
+                           <div class="modal-body"><p>Actualmente estan trabajando en su ultimo albun aun con un nombre incognito...</p>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                             <a class="btn btn-primary"<a href="audio/Yo no soy chofer.mp3" class="btn btn-primary" role="button">Escuchar</a>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <!-- Modal 3-->
+                     <div class="modal fade" id="produc3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header"style="text-align: center">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h4 class="modal-title" id="myModalLabel">El nuevo estilo tropical</h4>
+                           </div>
+                           <div class="modal-body"><p> En sus orígenes, uno de los programas casa talentos de la época, reconoce el tremendo potencial que tienen estos jóvenes para revolucionar la música tropical ranchera en "Chile"...</p>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                             <a class="btn btn-primary"<a href="audio/Yo no soy chofer.mp3" class="btn btn-primary" role="button">Escuchar</a>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     
+                      <!-- Modal 1 dvd-->
+                     <div class="modal fade" id="produc4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header"style="text-align: center">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h4 class="modal-title" id="myModalLabel">Lo último de los Hermanos Araya</h4>
+                           </div>
+                           <div class="modal-body"><p>Por estos días están trabajando en su último álbum, aún con un nombre incognito y desconocido. Los H.A son actualmente el único grupo del sector con más trayectoria en este género de musical, quieres escuchar su uno de sus últimos trabajos, pincha el botón...</p>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                             <a class="btn btn-primary"<a href="video/Mi_película.mp4" class="btn btn-primary" role="button">Ver video</a>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     
+                      <!-- Modal 2-->
+                     <div class="modal fade" id="produc5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header"style="text-align: center">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h4 class="modal-title" id="myModalLabel">Los chicos de la cumbia</h4>
+                           </div>
+                           <div class="modal-body"><p>Actualmente estan trabajando en su ultimo albun, aún con un nombre incognito y deconocido. Los H.A son actualmente el unico grupo del sector con mas trayectoria en este genero de musica, quieres escuchar su uno de sus ultimos trabajos pincha el boton. ...</p>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                             <a class="btn btn-primary"<a href="audio/Yo no soy chofer.mp3" class="btn btn-primary" role="button">Escuchar</a>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <!-- Modal 3-->
+                     <div class="modal fade" id="produc6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header"style="text-align: center">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h4 class="modal-title" id="myModalLabel">El nuevo estilo tropical</h4>
+                           </div>
+                           <div class="modal-body"><p> En sus orígenes, uno de los programas casa talentos de la época, reconoce el tremendo potencial que tienen estos jóvenes para revolucionar la música tropical ranchera en "Chile"...</p>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                             <a class="btn btn-primary"<a href="audio/Yo no soy chofer.mp3" class="btn btn-primary" role="button">Escuchar</a>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     
+                      <!-- Modal 1 cd-->
+                     <div class="modal fade" id="produc7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header"style="text-align: center">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h4 class="modal-title" id="myModalLabel">Lo último de los Hermanos Araya</h4>
+                           </div>
+                           <div class="modal-body"><p>Por estos días están trabajando en su último álbum, aún con un nombre incognito y desconocido. Los H.A son actualmente el único grupo del sector con más trayectoria en este género de musical, quieres escuchar su uno de sus últimos trabajos, pincha el botón...</p>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                             <a class="btn btn-primary"<a href="audio/Cajita Vallenata v4.mp3" class="btn btn-primary" role="button">Escuchar</a>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     
+                      <!-- Modal 2-->
+                     <div class="modal fade" id="produc8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header"style="text-align: center">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h4 class="modal-title" id="myModalLabel">Los chicos de la cumbia</h4>
+                           </div>
+                           <div class="modal-body"><p>Actualmente estan trabajando en su ultimo albun aun con un nombre incognito...</p>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                             <a class="btn btn-primary"<a href="audio/Yo no soy chofer.mp3" class="btn btn-primary" role="button">Escuchar</a>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <!-- Modal 3-->
+                     <div class="modal fade" id="produc9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header"style="text-align: center">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h4 class="modal-title" id="myModalLabel">El nuevo estilo tropical</h4>
+                           </div>
+                           <div class="modal-body"><p> En sus orígenes, uno de los programas casa talentos de la época, reconoce el tremendo potencial que tienen estos jóvenes para revolucionar la música tropical ranchera en "Chile"...</p>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                             <a class="btn btn-primary"<a href="audio/Yo no soy chofer.mp3" class="btn btn-primary" role="button">Escuchar</a>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     
+                     <!--modal galeria de imagenes-->
+                      <div class="modal fade" id="galeria1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header" style="text-align: center">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h4 class="modal-title" id="myModalLabel">Galeria de Imagenes</h4>
+                           </div>
+                           <!--<div class="modal-body" style="text-align: center"><p> Galeria de imagenes..</p>
+                           </div> <!--galeria de fotos-sin este texto-->
+                           
+                           <div class="row"></div>
 
-        <section id="Categorias">
-          <section class="uno">
-            <img src="img/imagen8.jpg" width="250" height="190">
-            <h2>En el Comienso</h2>
-            <p class="parrafo">
-            La historia de Los Hermanos Araya inicia en un fundo llamado Bodega, cercano al pueblo de Longavi ciudad de Linares, en el año 1995, cuando Pedro, el mayor de la familia Araya Vergara, convence a su padre y madre de origenes campasina y deciden buscar nuevas oportunidades, salen de la cuidad de Linares con su hermano Carlos rumbo a Santiago de chile. Por entonces Pedro y Carlos solo tenían 18 y 19 años respectivamente. La precaria situación económica de la familia obligaba a todos a contribuir con sus intenciones.</p>
-            <!--<a href="" class="leer mas">Leer más</a><br><br> -->
-          </section>
+							<div class="gallery" id="gallery">
+							 <div class="col-md-12 d-flex justify-content-center">
 
-          <section class="uno dos">
-              <img src="img/imagen8.jpg" width="250" height="190">
-              <h2>Su Historia</h2>
-              <p class="parrafo"> <!--para darle formato al parrafo y justificar-->
-              La historia de Los Hermanos Araya inicia en un fundo llamado Bodega, cercano al pueblo de Longavi ciudad de Linares, en el año 1995, cuando Pedro, el mayor de la familia Araya Vergara, convence a su padre y madre de origenes campasina y deciden buscar nuevas oportunidades, salen de la cuidad de Linares con su hermano Carlos rumbo a Santiago de chile. Por entonces Pedro y Carlos solo tenían 18 y 19 años respectivamente. La precaria situación económica de la familia obligaba a todos a contribuir con sus intenciones.</p>
-              <!--<a href="" class="leer mas">Leer más</a><br><br>-->
-        </section>
+                                  <div class="mb-3 pics animation all 2"style="text-align: center"> <!--centrar imagen-->
+                                    <img class="img-fluid" src="img/imagen8.jpg" alt="Card image cap">
+                                  </div><br>
+                                  
+                                  <div class="mb-3 pics animation all 2"style="text-align: center"> <!--centrar imagen-->
+                                    <img class="img-fluid" src="img/1-vol_grande.jpg" alt="Card image cap">
+                                  </div><br>
+                                  
+                                  <div class="mb-3 pics animation all 2"style="text-align: center">
+                                    <img class="img-fluid" src="img/imagen8.jpg" alt="Card image cap">
+                                  </div><br>
+                                  
+                                  <div class="mb-3 pics animation all 2"style="text-align: center">
+                                    <img class="img-fluid" src="img/1-vol_grande.jpg" alt="Card image cap">
+                                  </div><br>
+                                  
+                                  <div class="mb-3 pics animation all 2"style="text-align: center">
+                                    <img class="img-fluid" src="img/imagen8.jpg" alt="Card image cap">
+                                  </div><br>
+                                  </div>
 
-          <section class="uno">
-            <img src="img/imagen8.jpg" width="250" height="190">
-            <h2>Su Historia</h2>
-            <p class="parrafo">
-            La historia de Los Hermanos Araya inicia en un fundo llamado Bodega, cercano al pueblo de Longavi ciudad de Linares, en el año 1995, cuando Pedro, el mayor de la familia Araya Vergara, convence a su padre y madre de origenes campasina y deciden buscar nuevas oportunidades, salen de la cuidad de Linares con su hermano Carlos rumbo a Santiago de chile. Por entonces Pedro y Carlos solo tenían 18 y 19 años respectivamente. La precaria situación económica de la familia obligaba a todos a contribuir con sus intenciones.</p>
-            <!--<a href="" class="leer mas">Leer más</a><br><br>-->
-          </section> <!--categorias-->
-
-          <section id="info">
-            <section id="izq">
-              <p class="parrafo">
-              <img src="img/1-vol.jpg" align="left"width="150" class="img">
-              <h2>Vuelven con todo su sabor</h2>
-              <p class="parrafo">La historia de Los Hermanos Araya inicia en un fundo llamado Bodega, cercano al pueblo de Longavi ciudad de Linares, en el año 1995, cuando Pedro, el mayor de la familia Araya Vergara, convence a su padre y madre de origenes campasina y deciden buscar nuevas oportunidades, salen de la cuidad de Linares con su hermano Carlos rumbo a Santiago de chile. Por entonces Pedro y Carlos solo tenían 18 y 19 años respectivamente. La precaria situación económica de la familia obligaba a todos a contribuir con sus intenciones.</p>
-            </section>
-
-          <section id="der">
-            <h2>En una de sus presentaciones</h2>
-            <video <!--width="290" height="190"--> src="video/Los Hermanos Araya.mp4" autoplay muted loop></video></section>
-            </section>
-            <footer>
-
-            </footer>
-    </body>
-</html>
+                              </div>
+                           	 <div class="modal-footer">
+                             <!--<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                             <a class="btn btn-primary"<a href="audio/Yo no soy chofer.mp3" class="btn btn-primary" role="button">Escuchar</a>-->
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+	      
+	               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  		           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  		           <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  		  
+  		    </body>
+			</html>
